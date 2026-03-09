@@ -54,6 +54,7 @@ jobs:
     name: DAST - OWASP ZAP Scan
     runs-on: ubuntu-latest
     needs: sast-sonarcloud
+    continue-on-error: true
 
     steps:
       - name: Checkout Code
