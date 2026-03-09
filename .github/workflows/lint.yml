@@ -29,5 +29,5 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.organization=arfriya-shikalgar
-            -Dsonar.projectKey=arfriya-shikalgar_secure-pipeline-demo
+            -Dsonar.organization=arfiya-shikalgar
+            -Dsonar.projectKey=arfiya-shikalgar_secure-pipeline-demo
