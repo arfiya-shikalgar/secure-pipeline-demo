@@ -33,3 +33,15 @@ jobs:
             -Dsonar.projectKey=arfiya-shikalgar_secure-pipeline-demo
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+dast-owasp-zap:
+  name: DAST - OWASP ZAP Scan
+  runs-on: ubuntu-latest
+
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: OWASP ZAP Baseline Scan
+      uses: zaproxy/action-baseline@v0.7.0
+      with:
+        target: "https://example.com"
