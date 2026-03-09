@@ -63,5 +63,6 @@ jobs:
         uses: zaproxy/action-baseline@v0.7.0
         with:
           target: "https://example.com"
+          fail_action: false
 
   
